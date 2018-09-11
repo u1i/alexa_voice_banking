@@ -1,7 +1,7 @@
 {
     "interactionModel": {
         "languageModel": {
-            "invocationName": "my japanese bank",
+            "invocationName": "japanese bank",
             "intents": [
                 {
                     "name": "AMAZON.FallbackIntent",
