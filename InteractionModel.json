@@ -1,0 +1,42 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "my japanese bank",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "GetBalance",
+                    "slots": [],
+                    "samples": [
+                        "my account balance",
+                        "my balance",
+                        "get my balance",
+                        "how much money do I have",
+                        "what's my balance",
+                        "what is my balance"
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}
