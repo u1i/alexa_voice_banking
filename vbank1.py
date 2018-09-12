@@ -26,7 +26,17 @@ def launch():
 @ask.intent('GetBalance')
 def get_balance():
 
-	return statement("<speak><say-as interpret-as='interjection'>Well well</say-as>. You have zero dollars. <prosody pitch='x-high'>Nothing at all.</prosody> Nada. <say-as interpret-as='interjection'>aw man</say-as>.</speak>")
+	try:
+		file = open("/tmp/balance.db","r")
+		amount = str(int(file.read()))
+		file.close()
+	except:
+		amount = "0"
+
+	if amount == "0":
+		return statement("<speak><say-as interpret-as='interjection'>Well well</say-as>. You have zero dollars. <prosody pitch='x-high'>Nothing at all.</prosody> Nada. <say-as interpret-as='interjection'>aw man</say-as>.</speak>")
+	else:
+		return statement("<speak>Your account currently has a balance of <say-as interpret-as='cardinal'>" + amount + "</say-as> dollars. <say-as interpret-as='interjection'>yay</say-as>.</speak>")
 
 @ask.intent('AMAZON.StopIntent')
 def stop():
