@@ -1,4 +1,4 @@
-# alexa_voice_banking
+# Alexa Voice Banking
 
 ./set_balance.sh 327
 
